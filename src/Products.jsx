@@ -7,9 +7,8 @@ export default function Products() {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchProducts());
-  }, []);
+  }, [dispatch]);
   console.log("Products rendered");
   console.log("Products rendered with products: ", products);
-
   return <div>Products</div>;
 }
