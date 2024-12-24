@@ -1,5 +1,6 @@
 import { useSelector, useDispatch } from "react-redux";
 import { increment, decrement } from "./slices/cartSlice.js";
+import Products from "./Products.jsx";
 function App() {
   const count = useSelector((state) => state.cart.count);
   const dispatch = useDispatch();
@@ -16,6 +17,7 @@ function App() {
         <button onClick={() => dispatch(decrement())}>
           click to decrement
         </button>
+        <Products />
       </div>
     </>
   );
