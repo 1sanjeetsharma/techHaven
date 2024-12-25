@@ -1,15 +1,16 @@
 import { useState, useEffect } from "react";
+import Products from "./Products";
 function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const totalSlides = 4;
 
   // Auto-slide functionality (optional)
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentSlide((prevSlide) => (prevSlide + 1) % totalSlides);
-    }, 3000); // Slide every 3 seconds
-    return () => clearInterval(interval);
-  }, []);
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setCurrentSlide((prevSlide) => (prevSlide + 1) % totalSlides);
+  //   }, 3000); // Slide every 3 seconds
+  //   return () => clearInterval(interval);
+  // }, []);
 
   const handleNext = () => {
     setCurrentSlide((prevSlide) => (prevSlide + 1) % totalSlides);
@@ -110,6 +111,7 @@ function Home() {
           </span>
         </button>
       </div>
+      <Products />
     </div>
   );
 }
