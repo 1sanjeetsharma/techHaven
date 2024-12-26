@@ -1,8 +1,22 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Tech Haven
 
-Currently, two official plugins are available:
+Tech Heven is a single page E-commerece site. build using react, routing acheived with react-router-dom
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+#Tech Stack:
+    Html, Css , js, react, redux toolkit, Tailwind Css, FakestoreApi, Jest
+
+
+## Features
+
+- Home page
+- Product page 
+- cart page (adding and deleting of cart items with Grand total)
+- checkout page
+
+
+
+## Deployment
+
+https://techhaven12.netlify.app/
+
