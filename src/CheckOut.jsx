@@ -2,7 +2,7 @@ import React from "react";
 function CheckOut() {
   const handlesubmit = (e) => {
     e.preventDefault();
-    alert("Order Placed Successfully");
+    alert("Feature not available");
   };
   return (
     <div className="flex justify-center h-screen p-4">

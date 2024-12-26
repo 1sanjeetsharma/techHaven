@@ -5,19 +5,23 @@ import Cart from "./Cart.jsx";
 import Home from "./Home.jsx";
 import SingleProduct from "./SingleProduct.jsx";
 import CheckOut from "./CheckOut.jsx";
+import Footer from "./Footer.jsx";
 function App() {
   return (
     <>
-      <div className="container">
+      <div className="container bg-green-200">
         <BrowserRouter>
           <Navbar />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/product" element={<Products />} />
-            <Route path="/cart" element={<Cart />} />
-            <Route path="/product/:id" element={<SingleProduct />} />
-            <Route path="/checkOut" element={<CheckOut />} />
-          </Routes>
+          <div className="container">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/product" element={<Products />} />
+              <Route path="/cart" element={<Cart />} />
+              <Route path="/product/:id" element={<SingleProduct />} />
+              <Route path="/checkOut" element={<CheckOut />} />
+            </Routes>
+          </div>
+          <Footer />
         </BrowserRouter>
       </div>
     </>
