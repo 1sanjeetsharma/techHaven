@@ -4,6 +4,7 @@ import Navbar from "./Navbar.jsx";
 import Cart from "./Cart.jsx";
 import Home from "./Home.jsx";
 import SingleProduct from "./SingleProduct.jsx";
+import CheckOut from "./CheckOut.jsx";
 function App() {
   return (
     <>
@@ -15,6 +16,7 @@ function App() {
             <Route path="/product" element={<Products />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/product/:id" element={<SingleProduct />} />
+            <Route path="/checkOut" element={<CheckOut />} />
           </Routes>
         </BrowserRouter>
       </div>

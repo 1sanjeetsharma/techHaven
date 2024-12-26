@@ -1,4 +1,5 @@
 import { useSelector, useDispatch } from "react-redux";
+import { Link } from "react-router-dom";
 import { removeItem } from "./slices/cartSlice";
 function Cart() {
   const cart = useSelector((state) => state.cart.items);
@@ -45,6 +46,14 @@ function Cart() {
           <h1 className="w-full  mt-5 ml-5 mr-5 text-right text-red-600 font-extrabold">
             Total: ${sum}
           </h1>
+          <div className="flex justify-end">
+            <Link
+              to="/checkOut"
+              className="block max-w-fit border p-4 rounded bg-green-500 text-right mt-5 mr-5 "
+            >
+              checkout
+            </Link>
+          </div>
         </div>
       </div>
     </>

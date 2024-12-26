@@ -6,6 +6,7 @@ export const fetchProducts = () => {
     try {
       const response = await axios.get("https://fakestoreapi.com/products/");
       dispatch(setProducts(response.data));
+      dispatch(setStatus(false));
     } catch (error) {
       console.error("Error fetching products: ", error);
     }
@@ -15,15 +16,18 @@ const productSlice = createSlice({
   name: "products",
   initialState: {
     items: [],
-    status: "idle",
+    status: false,
     error: null,
   },
   reducers: {
     setProducts: (state, action) => {
       state.items = action.payload;
     },
+    setStatus: (state, action) => {
+      state.status = action.payload;
+    },
   },
 });
 
-export const { setProducts } = productSlice.actions;
+export const { setProducts, setStatus } = productSlice.actions;
 export default productSlice.reducer;
