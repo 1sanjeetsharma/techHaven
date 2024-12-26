@@ -10,7 +10,7 @@ Tech Heven is a single page E-commerece site. build using react, routing acheive
 ## Features
 
 - Home page
-- Product page 
+- Product page (sort by category and Price )
 - cart page (adding and deleting of cart items with Grand total)
 - checkout page
 
